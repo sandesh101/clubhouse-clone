@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(8.0, 0.0, 10.0, 0.0),
             child: IconButton(
               onPressed: () {},
               icon: const Icon(
@@ -46,6 +46,18 @@ class HomePage extends StatelessWidget {
           ),
           const CircleAvatar(
             backgroundImage: AssetImage('Images/ProfilePicture.jpg'),
+          ),
+        ],
+      ),
+      body: Stack(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: TextFormField(
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: 'Search for people and topics'),
+            ),
           ),
         ],
       ),
