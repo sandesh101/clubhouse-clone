@@ -55,10 +55,10 @@ class HomePage extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: [
-          SearchBar(),
           ListView(
             padding: const EdgeInsets.fromLTRB(20, 20, 20, 120),
             children: [
+              SearchBar(),
               CommingRooms(),
             ],
           ),
