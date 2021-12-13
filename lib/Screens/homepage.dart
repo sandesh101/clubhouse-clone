@@ -52,11 +52,24 @@ class HomePage extends StatelessWidget {
       body: Stack(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: TextFormField(
-              decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'Search for people and topics'),
+            padding: const EdgeInsets.all(12.0),
+            child: Container(
+              height: 30,
+              width: 500,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10.0)),
+              child: Center(
+                child: Row(
+                  children: [
+                    const Icon(Icons.search_outlined),
+                    const Text(
+                      'Search for people',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
         ],
