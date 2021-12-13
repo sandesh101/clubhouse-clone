@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(8.0, 0.0, 10.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0),
             child: IconButton(
               onPressed: () {},
               icon: const Icon(
@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(8.0, 0.0, 10.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
             child: IconButton(
               onPressed: () {},
               icon: const Icon(
