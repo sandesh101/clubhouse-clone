@@ -1,5 +1,7 @@
-import 'package:clubhouse_clone/Variables/variables.dart';
+// import 'package:clubhouse_clone/Variables/variables.dart';
 import 'package:flutter/material.dart';
+import 'package:clubhouse_clone/Widgets/searchbar.dart';
+import 'package:clubhouse_clone/Widgets/commingrooms.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -51,28 +53,14 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Stack(
+        alignment: Alignment.center,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Container(
-              height: 30,
-              width: 500,
-              decoration: BoxDecoration(
-                  color: Variables.primary,
-                  borderRadius: BorderRadius.circular(10.0)),
-              child: Center(
-                child: Row(
-                  children: [
-                    const Icon(Icons.search_outlined),
-                    const SizedBox(width: 10),
-                    const Text(
-                      'Search for people',
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+          SearchBar(),
+          ListView(
+            padding: const EdgeInsets.fromLTRB(20, 20, 20, 120),
+            children: [
+              CommingRooms(),
+            ],
           ),
         ],
       ),
