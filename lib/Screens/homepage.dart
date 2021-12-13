@@ -1,3 +1,4 @@
+import 'package:clubhouse_clone/Variables/variables.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -57,12 +58,13 @@ class HomePage extends StatelessWidget {
               height: 30,
               width: 500,
               decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Variables.primary,
                   borderRadius: BorderRadius.circular(10.0)),
               child: Center(
                 child: Row(
                   children: [
                     const Icon(Icons.search_outlined),
+                    const SizedBox(width: 10),
                     const Text(
                       'Search for people',
                       style: TextStyle(fontSize: 20),
